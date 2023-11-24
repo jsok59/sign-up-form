@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sidebar {
+    background-image: url("./images/tutoring.jpg");
+    width: 35vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    border: black 2px solid;
+}
+
+.top {
+    height: 40vh;
+}
+
+.mid {
+    height: 30vh;
+}
+
+.bot {
+    height: 30vh;
+}
