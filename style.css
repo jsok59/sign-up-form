@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./fonts/Norse-Bold.otf);
+  }
+  
+
+
 body {
     display: flex;
     flex-direction: row;
@@ -16,23 +23,89 @@ body {
     width: 35vw;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50%;
+    background-position: 45%;
+    font-family: Norse-Bold, sans-serif;
 }
 
 .right {
     display: flex;
     flex-direction: column;
-    border: black 2px solid;
+    width: 65vw;
+    background-color: #fafafa;
 }
 
 .top {
-    height: 40vh;
+    height: 33vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 5%;
+    margin-bottom: 2%;
 }
+
+/* mid part of the page */
 
 .mid {
-    height: 30vh;
+    background-color: white;
+    padding: 2% 5% 2% 5%;
+    
 }
 
+.main-form-div {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 5px;
+}
+
+.form-divs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+label {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* END: mid part of the page */
+
+
+
+input {
+    width: 250px;
+    height: 30px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+input:focus {
+    border: 1px solid blue;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+
+
 .bot {
-    height: 30vh;
+    height: 33vh;
+}
+
+.error {
+
+    color: red;
+    font-size: 10px;
+
 }

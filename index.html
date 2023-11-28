@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up for Tutor</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign Up for Tutor</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="main.js"></script>
+	</head>
 
-<body>
-    <div class="sidebar">
-        
-        
-    </div>
+	<body>
+		<div class="sidebar"></div>
 
-    <div class="right">
-        <div class="top">
-            <h1>Math Made Easy: Join us for personalized tutoring that turns complex problems into simple solutions. </h1>
-        </div>
-        <div class="mid">
+		<div class="right">
+			<div class="top">
+				<h2>
+					Math Made Easy: Join us for personalized tutoring that turns complex problems into simple solutions. <br />
+					Sign up <em>now</em> to get started.
+				</h2>
+			</div>
+			<div class="mid">
+				<h2 class="do-this">Let's do this!</h2>
+				<form id="signup" action="" method="get" class="main-form-div">
+					<div class="form-divs">
+						<div class="form-div">
+							<label for="first_name">FIRST NAME</label>
+							<input type="text" id="first_name" name="first_name" />
+						</div>
+						<div class="form-div">
+							<label for="email">EMAIL</label>
+							<input type="email" id="email" name="email" />
+						</div>
+						<div class="form-div">
+							<label for="password">PASSWORD</label>
+							<input type="password" id="password" name="password" required />
+							<p class="error">*passwords do not match</p>
+						</div>
+					</div>
 
-        </div>
-        <div class="bot">
+					<div class="form-divs">
+						<div class="form-div">
+							<label for="last_name">LAST NAME</label>
+							<input type="text" id="last_name" name="last_name" />
+						</div>
+						<div class="form-div">
+							<label for="phone_number">PHONE NUMBER</label>
+							<input type="tel" id="phone_number" name="phone_number" />
+						</div>
+						<div class="form-div">
+							<label for="confirm_pass">CONFIRM PASSWORD</label>
+							<input type="password" id="confirm_pass" name="confirm_pass" required />
+						</div>
+					</div>
+				</form>
+			</div>
 
-        </div>
-    </div>
-</body>
+			<div class="bot">
+				<button type="submit" form="signup" class="submit-btn">Create Account</button>
+			</div>
+		</div>
+	</body>
 </html>
