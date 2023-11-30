@@ -44,11 +44,14 @@ body {
 }
 
 /* mid part of the page */
+:root {
+    --div-padding: 5%;
+}
 
 .mid {
     background-color: white;
     padding: 2% 5% 2% 5%;
-    
+    box-shadow: 6px 6px 6px -2px gray;
 }
 
 .main-form-div {
@@ -78,7 +81,15 @@ label {
 
 /* END: mid part of the page */
 
-
+.submit-btn {
+    margin: 3% 0 0 5%;
+    padding: 2% 4% 2% 4%;
+    background-color: olive;
+    font-size: 15px;
+    color: white;
+    border-radius: 15px;
+    border: none;
+}
 
 input {
     width: 250px;
@@ -86,6 +97,7 @@ input {
     border: 1px solid #E5E7EB;
     border-radius: 5px;
     font-size: 15px;
+    font-weight:500;
     padding-left: 5px;
 }
 
@@ -103,7 +115,7 @@ input:invalid {
     height: 33vh;
 }
 
-.error {
+.error_pass, .error_phone {
 
     color: red;
     font-size: 10px;
